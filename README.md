@@ -1,4 +1,4 @@
-# three-serialize-animation
+# threejs-serialize-animation
 A script that serializes animations in a Three.js (json) file and makes it smaller.
 
 ![Sample](https://raw.githubusercontent.com/brunoimbrizi/threejs-serialize-animation/master/example/images/screencapture.gif)
