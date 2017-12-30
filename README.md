@@ -1,6 +1,8 @@
 # three-serialize-animation
 A script that serializes animations in a Three.js (json) file and makes it smaller.
 
+![Sample](https://raw.githubusercontent.com/brunoimbrizi/threejs-serialize-animation/master/example/images/screencapture.gif)
+
 ## Why
 Three.js (json) files containing animations can get quite big. Using the Blender Exporter it is possible to reduce file sizes by turning 'Indent JSON' off, or turning 'Enable precision' on or setting 'File compression' to msgpack.
 
