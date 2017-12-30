@@ -66,7 +66,7 @@ $ node serializeAnimation.js <input-file.json>
 #### Parse
 ```
 import * as THREE from 'three';
-import { parseAnimation } from 'parseAnimation';
+import { parseAnimation } from 'threejs-serialize-animation';
 
 // override
 THREE.AnimationClip.parseAnimation = parseAnimation;
