@@ -45,7 +45,7 @@
 
 		<script src="https://threejs.org/build/three.js"></script>
 		<script src="https://threejs.org/examples/js/Detector.js"></script>
-		<script src="../serializeAnimation.js"></script>
+		<script src="../parseAnimation.js"></script>
 
 		<script>
 			var container;
@@ -95,6 +95,10 @@
 
 				container.appendChild( renderer.domElement );
 
+				// OVERRIDE AnimationClip.parseAnimation
+
+				THREE.AnimationClip.parseAnimation = parseAnimation;
+
 
 				// LOAD JSON
 
@@ -102,7 +106,7 @@
 				loader.load( "models/capoeira-serialized.json", function ( geometry, materials ) {
 
 					var material = new THREE.MeshStandardMaterial({
-						color: 0x99CCEE,
+						color: 0xEEEEEE,
 						skinning: true,
 						roughness: 0.9
 					});
