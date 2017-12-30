@@ -1,7 +1,7 @@
 # three-serialize-animation
-A script to serialize animations in a Three.js (json) file and make it smaller.
+A script that serializes animations in a Three.js (json) file and makes it smaller.
 
-### Why
+## Why
 Three.js (json) files containing animations can get quite big. Using the Blender Exporter it is possible to reduce file sizes by turning 'Indent JSON' off, or turning 'Enable precision' on or setting 'File compression' to msgpack.
 
 But there is a way to get even smaller files: to serialize the key values in the `animations` node.
@@ -17,7 +17,7 @@ Some test results with different settings:
 * 16,968 kb - msgpack compression
 * 7,298 kb - precision 3, serialized
 
-### What
+## What
 `serializeAnimation.js` copies the values of each keyframe property into a single array.
 
 i.e.
@@ -45,14 +45,14 @@ Becomes:
 }
 ```
 
-### It's a hack
+## It's a hack
 Three.js is not expecting a single key containing all the values. It is necessary to hack it a bit, namely by overriding `AnimationClip.parseAnimation`. This is what `parseAnimation.js` is doing. 
 
 What is curious is that internally the values are already serialized. This happens inside `AnimationClip.parseAnimation`, more precisely when `flattenJSON` is called.
 
 What `parseAnimation.js` does it just to bypass that call and just use the values already serialized in the file.
 
-### How
+## How
 
 #### Serialize
 `node serializeAnimation.js <input-file.json>`
