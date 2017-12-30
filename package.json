@@ -1,0 +1,23 @@
+{
+	"name": "threejs-serialize-animation",
+	"version": "1.0.0",
+	"description": "A script that serializes animations in a Three.js (json) file and makes it smaller.",
+	"main": "parseAnimation.js",
+	"scripts": { },
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/brunoimbrizi/threejs-serialize-animation.git"
+	},
+	"keywords": [
+		"threejs",
+		"skeleton",
+		"bones",
+		"animation"
+	],
+	"author": "Bruno Imbrizi <bruno.imbrizi@gmail.com> (http://brunoimbrizi.com)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/brunoimbrizi/threejs-serialize-animation/issues"
+	},
+	"homepage": "https://github.com/brunoimbrizi/threejs-serialize-animation#readme"
+}
